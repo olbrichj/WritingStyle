@@ -1,0 +1,5 @@
+extends: existence
+message: "Incorrect use of currency symbols in '%s'."
+ignorecase: true
+tokens:
+  - '[\d]+\€ ?(?:euro(s)*|eur)'
