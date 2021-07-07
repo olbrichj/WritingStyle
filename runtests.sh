@@ -2,6 +2,14 @@
 
 counter=0
 
+print_header() {
+    local title="$1"
+    echo ""
+    echo "==================================="
+    echo "${title}"
+    echo "==================================="
+}
+
 increase_counter() {
     (( counter++ ))
 }
@@ -19,25 +27,27 @@ test_result() {
 }
 
 test_fixture() {
-	local file="${1}"
-	local name="${2}"
+	local name="${1}"
+	local path="${2}"
 	local expected="${3}"
     local result
-    result=$(vale --output=line ${file} | wc -l)
+    result=$(vale --output=line --config="${path}/.vale.ini" "${path}/fixture.md" | wc -l)
     test_result "${name}" "${expected}" "${result}"
 }
 
 
 # Test Fixtures
-test_fixture "tests/English/Acronyms.md" "Acronym Definitions" "2"
-test_fixture "tests/English/Contractions.md" "Contractions" "23"
-test_fixture "tests/English/Ellipses.md" "Ellipses" "1"
-test_fixture "tests/English/OxfordComma.md" "Oxford Comma" "3"
-test_fixture "tests/English/SentenceLength.md" "Sentence Length" "2"
+print_header "English"
+test_fixture "Acronym Definitions" "tests/English/Acronyms" "2"
+test_fixture "FIXME Annotations" "tests/English/Annotations" "6"
+test_fixture "Contractions" "tests/English/Contractions" "23"
+test_fixture "Ellipses" "tests/English/Ellipses" "1"
+test_fixture "Oxford Comma" "tests/English/OxfordComma" "3"
+test_fixture "Sentence Length" "tests/English/SentenceLength" "2"
 
 
 # Result
-echo ""
+print_header "Result"
 if [[ "${counter}" -gt 0 ]]; then
 	echo "Tests failed with ${counter} errors"
 else
