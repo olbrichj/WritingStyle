@@ -30,7 +30,10 @@ test_fixture() {
 
 # Test Fixtures
 test_fixture "tests/English/Acronyms.md" "Acronym Definitions" "2"
-
+test_fixture "tests/English/Contractions.md" "Contractions" "23"
+test_fixture "tests/English/Ellipses.md" "Ellipses" "1"
+test_fixture "tests/English/OxfordComma.md" "Oxford Comma" "3"
+test_fixture "tests/English/SentenceLength.md" "Sentence Length" "2"
 
 
 # Result
