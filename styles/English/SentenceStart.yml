@@ -2,5 +2,6 @@ extends: existence
 message: "Don't start a sentence with '%s'."
 ignorecase: false
 level: error
-raw:
+tokens:
+  - '(?:[;-]\s)so[\s,]|\bSo[\s,]'
   - '(?:[;-]\s)There\s(is|are)|\bThere\s(is|are)\b'

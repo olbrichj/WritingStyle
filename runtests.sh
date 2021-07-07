@@ -49,7 +49,7 @@ test_fixture "Ellipses" "tests/English/Ellipses" "1"
 test_fixture "Hyperbole" "tests/English/Hyperbole" "1"
 test_fixture "Oxford Comma" "tests/English/OxfordComma" "3"
 test_fixture "Sentence Length" "tests/English/SentenceLength" "2"
-test_fixture "There Is" "tests/English/ThereIs" "2"
+test_fixture "Sentence Start" "tests/English/SentenceStart" "3"
 test_fixture "Weasel" "tests/English/Weasel" "203"
 
 
