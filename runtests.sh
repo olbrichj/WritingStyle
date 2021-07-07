@@ -39,7 +39,8 @@ test_fixture() {
 # Test Fixtures
 print_header "English"
 test_fixture "Acronym Definitions" "tests/English/Acronyms" "2"
-test_fixture "FIXME Annotations" "tests/English/Annotations" "6"
+test_fixture "Auto Hyphenation" "tests/English/Auto" "1"
+test_fixture "Annotations FIXME" "tests/English/Annotations" "6"
 test_fixture "Contractions" "tests/English/Contractions" "23"
 test_fixture "Ellipses" "tests/English/Ellipses" "1"
 test_fixture "Oxford Comma" "tests/English/OxfordComma" "3"
