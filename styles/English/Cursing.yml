@@ -1,0 +1,15 @@
+extends: existence
+message: "Consider replacing '%s'."
+level: error
+ignorecase: true
+tokens:
+  - cunt
+  - fag
+  - fart
+  - piss
+  - tits
+  - turd
+  - twat
+  - '(?:\w*fuck\w*)'
+  - '(?:\w*cock\w*)'
+  - '(?:\w*shit\w*)'
