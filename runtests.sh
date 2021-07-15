@@ -52,6 +52,7 @@ test_fixture "Passive Voice" "tests/English/PassiveVoice" "32"
 test_fixture "Sentence Length" "tests/English/SentenceLength" "2"
 test_fixture "Sentence Start" "tests/English/SentenceStart" "3"
 test_fixture "Sentence Start Repetition" "tests/English/SentenceRepetition" "4"
+test_fixture "Spelling" "tests/English/Spelling" "1"
 test_fixture "Weasel" "tests/English/Weasel" "203"
 
 
