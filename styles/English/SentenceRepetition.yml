@@ -1,0 +1,6 @@
+extends: existence
+message: "Do repeatedly start sentences with the same word"
+level: error
+ignorecase: false
+tokens:
+  - '([A-Z][a-z]+)(([\w\s'',";()])+?[!?:.]){1,4}\s*\1'
