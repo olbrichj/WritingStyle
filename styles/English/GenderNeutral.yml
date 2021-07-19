@@ -1,0 +1,29 @@
+extends: existence
+message: "Consider using the generic masculinum."
+level: error
+ignorecase: true
+tokens:
+  - 'he or she'
+  - 'she or he'
+  - 'his or hers'
+  - 'hers or his'
+  - 'him or her'
+  - 'her or him'
+  - 'he/she'
+  - 'she/he'
+  - 'her/him'
+  - 'him/her'
+  - 'his/hers'
+  - 'hers/his'
+  - '\bMs'
+  - '\bMx'
+  - '\bey?\b'
+  - '\bem\b'
+  - '\beir'
+  - '\bper[s]?(elf)?\b'
+  - '\bver?(self)?\b'
+  - '\bvis\b'
+  - '\bxem?(self)?\b'
+  - '\bxyrs?\b'
+  - '\bze?(ir)?\b'
+  - '\bhirs?(elf)?\b'
